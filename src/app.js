@@ -5,7 +5,7 @@ import multer from "multer";
 
 const app = express();
 
-app.use(cors({ origin: "https://bajaj-frontend-sandy.vercel.app/", credentials: true }));  
+app.use(cors({ origin: "https://bajaj-frontend-sandy.vercel.app", credentials: true }));  
 app.use(express.json({ limit: "28kb" }));
 app.use(express.urlencoded({ extended: true, limit: "28kb" }));
 app.use(express.static("public"));
